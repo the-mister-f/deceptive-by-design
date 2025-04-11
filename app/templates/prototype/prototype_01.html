@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ios_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/ios.js') }}" defer></script>
+
+</head>
+
+<body class="ios">
+    <div class="container">
+        <div class="status-bar">
+            <p class="">04:20</p>
+            <div class="camera"></div>
+            <div class="status-bar-icons">
+                <i class="fa-solid fa-signal "></i>
+                <i class="fa-solid fa-wifi "></i>
+                <i class="fa-solid fa-battery-half "></i>
+            </div>
+        </div>
+        <div class="apps-container">
+            <div class="row">
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/facetime.png') }}" alt="">
+                    <p>FaceTime</p>
+                </div>
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/calendars-app.png') }}" alt="">
+                    <p>Calendar</p>
+                </div>
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/photos-app.png') }}" alt="">
+                    <p>Photos</p>
+                </div>
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/shortcuts-app.png') }}" alt="">
+                    <p>Shortcuts</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/healths-app.png') }}" alt="">
+                    <p>Health</p>
+                </div>
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/wallets-app.png') }}" alt="">
+                    <p>Wallet</p>
+                </div>
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/todos-app.png') }}" alt="">
+                    <p>Reminders</p>
+                </div>
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/emails-app.png') }}" alt="">
+                    <p>Mail</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/podcasts-app.png') }}" alt="">
+                    <p>Podcasts</p>
+                </div>
+                <div class="app">
+                    <img src="{{ url_for('static', filename='assets/app_icons/news-app.png') }}" alt="">
+                    <p>News</p>
+                </div>
+                <a href="{{ url_for('prototype02') }}">
+                    <div class="app" id="smartbites-app">
+                        <img src="{{ url_for('static', filename='assets/app_icons/app_icon.png') }}" alt="">
+                        <p>SmartBites</p>
+                    </div>
+                </a>
+                <div class="app">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="error-container">
+            <img src="{{ url_for('static', filename='assets/app_icons/app_icon.png') }}" alt="">
+
+            <p>Please open the SmartBites app to continue.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

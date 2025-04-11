@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/consent_management.js') }}" defer></script>
+</head>
+
+<body class="disableScrolling">
+    <div class="container top-padding">
+
+        <div class="overlay">
+            <div class="modal">
+                <div class="line"></div>
+                <img src="{{ url_for('static', filename='assets/consent_image.png') }}" alt="">
+                <div class="header">
+                    <h1>Your Journey Starts Here!</h1>
+                    <p>Please accept our Terms and Conditions to unlock the full potential of your experience.</p>
+                </div>
+
+                <div class="button-container vertical-buttons">
+                    <form method="POST" style="display: inline;">
+                        <button type="submit" class="button primary-button" name="button_pressed" value="accept_all">
+                            Accept All</button>
+                    </form>
+
+                    <form method="POST" style="display: inline;">
+                        <button type="submit" class="button secondary-button" name="button_pressed" value="read_terms">
+                            Read Terms and Conditions</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-emoji">
+            <img src="{{ url_for('static', filename='assets/lock_icon.png') }}" alt="">
+            <div class="header small-gap">
+                <h1>Terms of Service</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <p><strong>Effective Date: 01.01.2025</strong></p>
+            <p>Welcome to SmartBytes! By downloading, accessing, or using our application (the "App"), you agree to
+                comply
+                with and be bound by these Terms and Conditions ("Terms"). Please read them carefully before using our
+                services.</p>
+            <p><strong>1. Acceptance of Terms</strong><br>By creating an account or using SmartBytes, you acknowledge
+                that
+                you have read, understood, and agree to these Terms. If you do not agree, please refrain from using the
+                App.
+            </p>
+            <p><strong>2. Description of Services</strong><br>SmartBytes is a nutrition tracking app designed to help
+                users
+                manage their dietary habits, monitor their nutritional intake, and achieve their health goals. Features
+                may
+                include, but are not limited to:
+                Food logging and calorie tracking
+                Nutritional insights and analysis
+                Goal setting and progress tracking
+                We reserve the right to modify or discontinue any feature at any time without prior notice.</p>
+            <p><strong>3. Eligibility</strong><br>You must be at least 13 years old to use SmartBytes. If you are under
+                the
+                age of majority in your jurisdiction, you must have parental or guardian consent.</p>
+            <p><strong>4. Account Registration</strong><br>To access certain features, you will need to create an
+                account.
+                You agree to provide accurate, current, and complete information during the registration process and to
+                update such information to keep it accurate. You are responsible for safeguarding your account
+                credentials.
+            </p>
+            <p><strong>5. Privacy Policy</strong><br>Your privacy is important to us. Please refer to our Privacy Policy
+                for
+                details on how we collect, use, and safeguard your information.</p>
+            <p><strong>6. Data Donation and Newsletter Subscription</strong><br>SmartBytes may offer users the option to
+                donate their anonymized data for research purposes. By opting into this feature, you agree that your
+                data
+                may be used to improve nutritional science, enhance the App’s features, or support related research
+                initiatives. Your data will always be anonymized and will never be shared in a way that identifies you
+                personally.
+                Additionally, by subscribing to our newsletter, you consent to receive emails about updates, nutritional
+                tips, promotions, and other relevant content. You can opt out of the newsletter at any time by clicking
+                the
+                "unsubscribe" link in any email.</p>
+            <p><strong>7. Subscription and Fees</strong><br>Some features of SmartBytes may require a subscription.
+                Subscriptions will be billed on a recurring basis (e.g., monthly or annually) as selected by you at the
+                time
+                of purchase. All fees are non-refundable except as required by applicable law.</p>
+            <p><strong>8. User Responsibilities</strong><br>You agree not to:
+                Use the App for unlawful purposes.
+                Share false or misleading information.
+                Reverse-engineer, decompile, or attempt to extract the source code of the App.
+                Interfere with or disrupt the App’s functionality.</p>
+            <p><strong>9. Intellectual Property</strong><br>All content, trademarks, and other intellectual property
+                within
+                SmartBytes are owned by us or our licensors. You may not use this content without prior written
+                permission.
+            </p>
+            <p><strong>10. Disclaimer of Warranties</strong><br>SmartBytes is provided "as is" without warranties of any
+                kind, either express or implied, including but not limited to fitness for a particular purpose,
+                accuracy, or
+                reliability.</p>
+            <p><strong>11. Limitation of Liability</strong><br>To the maximum extent permitted by law, SmartBytes shall
+                not
+                be liable for any damages resulting from the use of the App, including but not limited to data loss,
+                health-related outcomes, or interruptions.</p>
+            <p><strong>12. Changes to Terms</strong><br>We reserve the right to modify these Terms at any time. Changes
+                will
+                be effective upon posting on the App or our website. Your continued use of SmartBytes constitutes
+                acceptance
+                of the updated Terms.</p>
+            <p><strong>13. Governing Law</strong><br>These Terms are governed by the laws of [Your Jurisdiction]. Any
+                disputes arising from these Terms will be resolved in the courts of Berlin, Germany.</p>
+        </div>
+
+        <form id="account_consent" method="post" class="hidden">
+            <div class="consent-container">
+                <div class="consent-section">
+                    <div class="radio-button2">
+                        <div class="consent-title">
+                            <h3>Terms of use</h3>
+                            <span class="required-error">REQUIRED</span>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" id="termsOfUseToggle" name="termsOfUseToggle">
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                    <p>To use our service, we require your consent to our privacy policy and terms of use.</p>
+                </div>
+                <div class="line"></div>
+                <div class="consent-section">
+                    <div class="radio-button2">
+                        <div class="consent-title">
+                            <h3>Stay up to date</h3>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" id="newsletterToggle" name="newsletterToggle">
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                    <p>We would be happy to keep you updated about health news and exclusive offers.</p>
+                </div>
+                <div class="line"></div>
+                <div class="consent-section">
+                    <div class="radio-button2">
+                        <div class="consent-title">
+                            <h3>Data Donation</h3>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" id="dataDonationToggle" name="dataDonationToggle">
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                    <p>Help us improve personalized insights and support scientific research.</p>
+                </div>
+            </div>
+
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>

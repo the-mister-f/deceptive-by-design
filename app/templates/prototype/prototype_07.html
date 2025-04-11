@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/input_validation.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="container top-padding">
+
+        <!--
+        <div class="page-number-container top-progress-container">
+            <div class="page-number top-progress active"></div>
+            <div class="page-number top-progress active"></div>
+            <div class="page-number top-progress active"></div>
+        </div>
+        -->
+
+
+        <div class="header-emoji">
+            <img src="{{ url_for('static', filename='assets/lock_icon.png') }}" alt="">
+            <div class="header small-gap">
+                <h1>Create a password</h1>
+                <h2>Create a password and remember it well</h2>
+            </div>
+        </div>
+
+
+        <form id="account_password" method="post" class="input-container radio-list">
+            <input type="password" id="passwordInput" name="passwordInput" class="text-box"
+                placeholder="Create your password" required>
+            <input type="password" id="repeatPasswordInput" class="text-box" placeholder="Repeat your password"
+                required>
+            <p id="errorMessage" class="input-error-message"></p>
+        </form>
+
+        <div class="button-container">
+            <button id="next" type="submit" form="account_password" class="button primary-button" disabled>Next</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

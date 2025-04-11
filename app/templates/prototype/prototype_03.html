@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='assets/usp_01.png') }}" alt="">
+
+        </div>
+
+        <div class="header">
+            <h1>SmartBites - Personalized
+                Tracking Made Easy</h1>
+            <h2>Log your meals, track activities, steps, weight, BMI, and monitor hydration with tailored
+                insights juts for you</h2>
+        </div>
+
+        <div class="page-number-container">
+            <div class="page-number active"></div>
+            <div class="page-number"></div>
+            <div class="page-number"></div>
+        </div>
+
+        <div class="button-container">
+            <a href="{{ url_for('prototype04') }}">
+                <button id="next" class="button primary-button">Continue</button>
+            </a>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

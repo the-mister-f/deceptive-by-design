@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/survey_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/input_validation.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/progress_bar.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress q12"></div>
+        </div>
+
+        <div class="header-emoji">
+            <div class="header" style="gap: 12px;">
+                <div class="horizontal-text">
+                    <img src="{{ url_for('static', filename='assets/app_icons/app_icon.png') }}" alt="">
+                    <h1>Get Ready to Explore SmartBites!</h1>
+                </div>
+
+                <p>Next, you'll interact with SmartBites, a fictional nutrition-tracking app.</p>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="icon-container" style="background-color: #C5E0C7;">
+                    <i class="fa-solid fa-book" style="color: #008000;"></i>
+                </div>
+                <div class="text-container">
+                    <h2>What to do?</h2>
+                    <ul class="card-text">
+                        <li>Imagine you just downloaded the app and are setting it up for the first time.</li>
+                        <li>Explore the app as you would naturally.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon-container" style="background-color: #F8EFC7;">
+                    <i class="fa-solid fa-bolt" style="color: #FFCC00;"></i>
+                </div>
+                <div class="text-container">
+                    <h2>Important!</h2>
+                    <p class="card-text">Your interactions will help us better understand user experiences. There are no
+                        right or wrong actions—just be yourself!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon-container" style="background-color: #F7D4D4;">
+                    <i class="fa-solid fa-shield-halved" style="color: #D83030;"></i>
+                </div>
+                <div class="text-container">
+                    <h2>No data is saved!</h2>
+                    <p class="card-text">Any information you enter in this prototype is not stored or recorded. All
+                        inputs will be lost once you leave the page.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="button-container">
+            <button id="back" class="button secondary-button" type="button" onclick="goBack()">Back</button>
+            <a href="{{ url_for('prototype01') }}">
+                <button class="button primary-button">Start</button>
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>

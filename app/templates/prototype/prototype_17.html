@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/input_validation2.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='javascript/script.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='javascript/animation.js') }}" defer></script>
+</head>
+
+<script>
+    const prototype18Url = "{{ url_for(group) }}";
+</script>
+
+<body>
+    <div class="container top-padding">
+
+        <div class="header-emoji extra-padding">
+            <h1 style="text-align: center;">Personalizing your Smartbites experience...</h1>
+        </div>
+
+        <div class="progress-container">
+            <svg class="progress-circle" viewBox="0 0 200 200">
+                <!-- Background Circle -->
+                <circle class="circle-bg" cx="100" cy="100" r="85" />
+                <!-- Progress Circle -->
+                <circle class="circle-progress" cx="100" cy="100" r="85" />
+            </svg>
+            <div class="percentage" id="percentage">0%</div>
+        </div>
+
+        <span class="bottom-text">Hang tight! We're crafting a personalized plan just for you</span>
+    </div>
+</body>
+
+</html>

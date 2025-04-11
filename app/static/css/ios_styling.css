@@ -1,0 +1,134 @@
+/* IOS HOME PAGE */
+.status-bar {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    padding: 10px 0px;
+    z-index: 10;
+}
+
+.status-bar p {
+    color: white;
+    width: 40%;
+    font-weight: 600;
+}
+
+.camera {
+    width: 80px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 100px;
+}
+
+.status-bar-icons {
+    display: flex;
+    justify-content: right;
+    gap: 8px;
+    align-items: center;
+    width: 40%;
+}
+
+.status-bar-icons i {
+    color: white;
+    font-size: var(--fs-12);
+}
+
+.status-bar-icons img {
+    color: white;
+    font-size: var(--fs-12);
+}
+
+.fa-battery-half {
+    font-size: var(--fs-20) !important;
+}
+
+.dark {
+    color: black !important;
+}
+
+body.ios .container {
+    background-image: url("/static/assets/ios_background.png");
+
+    background-size: cover;
+    padding: 16px 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    padding-top: 80px;
+}
+
+
+.apps-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.apps-container .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.apps-container a {
+    text-decoration: none;
+}
+
+.apps-container .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.apps-container .app p {
+    color: white;
+    font-size: var(--fs-12);
+}
+
+.apps-container .app img {
+    width: 60px;
+}
+
+.error-container {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: calc(100% - 60px);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 12px 16px;
+
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.error-container p {
+    font-weight: 600;
+    font-size: var(--fs-14);
+    color: var(--text-primary);
+}
+
+.error-container img {
+    width: 60px;
+}
+
+.error-container .close-popup {
+    color: var(--accent-primary);
+    text-decoration: underline;
+}
+
+#smartbites-app {
+    cursor: pointer;
+}

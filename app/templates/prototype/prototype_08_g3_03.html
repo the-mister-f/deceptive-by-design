@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="auto-height">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/input_validation.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='javascript/consent_management.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="container top-padding">
+
+        <!--
+        <div class="page-number-container top-progress-container">
+            <div class="page-number top-progress active"></div>
+            <div class="page-number top-progress active"></div>
+            <div class="page-number top-progress active"></div>
+        </div>
+        -->
+
+
+
+        <div class="header-emoji">
+            <img src="{{ url_for('static', filename='assets/shield_icon.png') }}" alt="">
+            <div class="header small-gap">
+                <h1>Privacy Preferences
+                </h1>
+                <h2>You can withdraw your consent at any time.</h2>
+            </div>
+        </div>
+
+
+        <form id="account_consent" method="post">
+
+            <div class="consent-container">
+                <div class="consent-section">
+                    <div class="radio-button2">
+                        <div class="consent-title">
+                            <h3>Terms of use</h3>
+                            <span class="required-error">REQUIRED</span>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" id="termsOfUseToggle" name="termsOfUseToggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                    <p>To use our service, we require your consent to our privacy policy and terms of use.</p>
+                </div>
+                <div class="line"></div>
+                <div class="consent-section">
+                    <div class="radio-button2">
+                        <div class="consent-title">
+                            <h3>Stay up to date</h3>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" id="newsletterToggle" name="newsletterToggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                    <p>We would be happy to keep you updated about health news and exclusive offers.</p>
+                </div>
+                <div class="line"></div>
+                <div class="consent-section">
+                    <div class="radio-button2">
+                        <div class="consent-title">
+                            <h3>Data Donation</h3>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" id="dataDonationToggle" name="dataDonationToggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+
+                    </div>
+                    <p>Help us improve personalized insights and support scientific research.</p>
+                </div>
+            </div>
+
+        </form>
+
+
+        <div class="sticky-button-container">
+            <button id="acceptAll" type="button" class="button primary-button">Accept
+                All</button>
+            <button id="next" type="submit" form="account_consent" class="button secondary-button">Continue</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

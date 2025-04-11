@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="auto-height">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/consent_management.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="container trial medium-gap">
+
+        <div class="header small-gap">
+            <img src="{{ url_for('static', filename='assets/clients.png') }}" alt="" class="clients">
+            <span><span>430K+</span> Happy Customers</span>
+        </div>
+
+        <div class="header small-gap" style="margin-bottom: 20px;">
+            <h1>Reach your target weight by August 5th</h1>
+            <div class="seperator"></div>
+            <h2>4x Faster with PLUS</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <i class="fa-solid fa-check"></i>
+                <div class="card-text-container">
+                    <p>Personalized Nutrition Plans</p>
+                    <span>Receive a tailored nutrition plan designed specifically for your body.</span>
+                </div>
+            </div>
+
+            <div class="image-container2">
+                <img src="{{ url_for('static', filename='assets/nutrition_ss.png') }}" alt="">
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-check"></i>
+                <div class="card-text-container">
+                    <p>Guidance from Certified Nutritionists</p>
+                    <span> They will answer your questions and address your concerns.</span>
+                </div>
+            </div>
+            <div class="image-container2">
+                <img src="{{ url_for('static', filename='assets/bmi_ss.png') }}" alt="">
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-check"></i>
+                <div class="card-text-container">
+                    <p>Food Tracking and Analysis</p>
+                    <span>Effortlessly track your food intake using our user-friendly app.</span>
+                </div>
+            </div>
+            <div class="image-container2">
+                <img src="{{ url_for('static', filename='assets/calorie_ss.png') }}" alt="">
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-check"></i>
+                <div class="card-text-container">
+                    <p>Meal Planning and Recipes</p>
+                    <span>Access a vast collection of delicious and healthy recipes tailored to your dietary
+                        needs.</span>
+                </div>
+            </div>
+            <div class="image-container2">
+                <img src="{{ url_for('static', filename='assets/recipe_ss.png') }}" alt="" class="full-container-image">
+            </div>
+        </div>
+
+
+        <div class="price-card">
+            <div class="price-row">
+                <h1>Monthly</h1>
+                <span>Best Value</span>
+            </div>
+            <p>First 30 days for free, then <b>14.99€ a month</b></p>
+        </div>
+
+        <!--
+                <form method="post" id="trialSignup" class="hidden">
+            <input type="checkbox" id="trialRadio" name="trialRadio" checked>
+            <label for="trialRadio">label</label>
+        </form>
+        -->
+
+        <div class="sticky-button-container vertical">
+            <form method="POST" style="display: inline;">
+                <button id="acceptTrial" type="submit" class="button primary-button" name="button_pressed"
+                    value="free_trial">Start Free Trial</button>
+            </form>
+
+            <form method="POST" style="display: inline;">
+                <button type="submit" class="button secondary-button" name="button_pressed" value="free_version">I Do
+                    Not Want To Get Healthier</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

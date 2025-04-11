@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ios_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/script.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='javascript/ios.js') }}" defer></script>
+</head>
+
+<script>
+    const prototype03Url = "{{ url_for('prototype03') }}";
+</script>
+
+<body>
+    <div class="container usp-screens">
+        <div class="status-bar">
+            <p class="dark">04:20</p>
+            <div class="camera"></div>
+            <div class="status-bar-icons">
+                <i class="fa-solid fa-signal dark"></i>
+                <i class="fa-solid fa-wifi dark"></i>
+                <i class="fa-solid fa-battery-half dark"></i>
+            </div>
+        </div>
+
+        <div class="app-icon">
+            <img src="{{ url_for('static', filename='assets/app_icons/app_logo.png') }}" alt="">
+            <h1>SmartBites</h1>
+        </div>
+    </div>
+</body>
+
+</html>

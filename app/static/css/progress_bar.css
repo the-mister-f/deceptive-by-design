@@ -1,0 +1,148 @@
+/*SURVEY QUESTIONS*/
+:root {
+    --questions-count: 10;
+}
+
+.q1 {
+    width: 3.7%;
+}
+
+.q2 {
+    width: 7.4%;
+}
+
+.q3 {
+    width: 11.1%;
+}
+
+.q4 {
+    width: 14.8%;
+}
+
+.q5 {
+    width: 18.5%;
+}
+
+.q6 {
+    width: 22.2%;
+}
+
+.q7 {
+    width: 25.9%;
+}
+
+.q8 {
+    width: 29.6%;
+}
+
+.q9 {
+    width: 33.3%;
+}
+
+.q10 {
+    width: 37%;
+}
+
+.q11 {
+    width: 40.7%;
+}
+
+.q12 {
+    width: 44.4%;
+}
+
+.q13 {
+    width: 48.1%;
+}
+
+.q14 {
+    width: 51.8%;
+}
+
+.q15 {
+    width: 55.5%;
+}
+
+.q16 {
+    width: 59.2%;
+}
+
+.q17 {
+    width: 62.9%;
+}
+
+.q18 {
+    width: 66.6%;
+}
+
+.q19 {
+    width: 70.3%;
+}
+
+.q20 {
+    width: 74%;
+}
+
+.q21 {
+    width: 77.7%;
+}
+
+.q22 {
+    width: 81.4%;
+}
+
+.q23 {
+    width: 85.1%;
+}
+
+.q24 {
+    width: 88.8%;
+}
+
+.q25 {
+    width: 92.5%;
+}
+
+.q26 {
+    width: 96.2%;
+}
+
+.q27 {
+    width: 100%;
+}
+
+
+
+/*PROTOTYPE QUESTIONS*/
+
+.p1 {
+    width: 12.5%;
+}
+
+.p2 {
+    width: 25%;
+}
+
+.p3 {
+    width: 37.5%;
+}
+
+.p4 {
+    width: 50%;
+}
+
+.p5 {
+    width: 62.5%;
+}
+
+.p6 {
+    width: 75%;
+}
+
+.p7 {
+    width: 87.5%;
+}
+
+.p8 {
+    width: 100%;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="auto-height">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/input_validation.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='javascript/script.js') }}" defer></script>
+</head>
+
+<body class="">
+    <div class="container trial top-padding">
+
+        <div class="header small-gap">
+            <h1>Tell Us Why You’re Skipping the Free Trial</h1>
+            <h2>We’d love to understand why you’re choosing not to start your free trial.</h2>
+        </div>
+
+        <div class="input-container" style="margin-bottom: 0px;">
+            <form id="skipReason" method="post" class="checkbox-list">
+
+                <div class="checkbox-input">
+                    <input type="radio" id="checkboxInput1" name="radioAnswer" class="checkbox">
+                    <label for="checkboxInput1" class="checkboxLabel">
+                        <span>I don’t think I’ll use it enough.</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="radio" id="checkboxInput2" name="radioAnswer" class="checkbox">
+                    <label for="checkboxInput2" class="checkboxLabel">
+                        <span>I’m worried about being charged</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="radio" id="checkboxInput3" name="radioAnswer" class="checkbox">
+                    <label for="checkboxInput3" class="checkboxLabel">
+                        <span>I don’t fully understand it</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="radio" id="checkboxInput4" name="radioAnswer" class="checkbox">
+                    <label for="checkboxInput4" class="checkboxLabel">
+                        <span>I feel like I’m being pressured</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="radio" id="checkboxInput5" name="radioAnswer" class="checkbox">
+                    <label for="checkboxInput5" class="checkboxLabel">
+                        <span>Other reasons</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="sticky-button-container">
+            <form method="POST" style="display: inline;">
+                <button id="startTrial" type="submit" class="button primary-button" name="button_pressed"
+                    value="free_trial">I Want the Trial</button>
+            </form>
+            <button id="next" type="submit" form="skipReason" class="button secondary-button" disabled>Skip
+                Free Trial</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

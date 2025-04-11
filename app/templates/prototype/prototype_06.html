@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Deceptive by Design</title>
+    <script src="https://kit.fontawesome.com/c02dd0c634.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app_styling.css') }}">
+    <script src="{{ url_for('static', filename='javascript/input_validation.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="container top-padding">
+
+        <!--
+        <div class="page-number-container top-progress-container">
+            <div class="page-number top-progress active"></div>
+            <div class="page-number top-progress active"></div>
+            <div class="page-number top-progress active"></div>
+        </div>
+        -->
+
+
+        <div class="header-emoji">
+            <img src="{{ url_for('static', filename='assets/email_icon.png') }}" alt="">
+            <div class="header small-gap">
+                <h1>What’s your email?</h1>
+                <h2>Just a few steps to set up your account, starting with your email.</h2>
+            </div>
+        </div>
+
+
+        <form id="account_email" method="post" class="input-container">
+            <input type="email" id="emailInput" name="emailInput" class="text-box" placeholder="Enter your email"
+                required>
+            <p id="errorMessage" class="input-error-message"></p>
+        </form>
+
+        <div class="button-container">
+            <button id="next" type="submit" form="account_email" class="button primary-button" disabled>Next</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
