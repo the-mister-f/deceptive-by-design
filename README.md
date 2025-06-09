@@ -35,7 +35,6 @@ Key findings include:
 ## 🧪 Experimental Design
 
 The experiment was implemented using **Flask**, a lightweight Python web framework. It served as the backend for managing routing, rendering templates, logging user interactions, and storing data.<br><br>
-
 ### Structure:
 
 - 📁 /templates/survey/ → HTML files for the survey questions
