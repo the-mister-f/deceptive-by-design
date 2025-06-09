@@ -3,7 +3,7 @@
 This repository accompanies the bachelor thesis:  
 **"Deceptive by Design: Assessing the Impact of UX Dark Patterns on Engagement and Trust in Digital Products"**  
 by **Firas Najar** (submitted April 11, 2025).
-It contains the experimental materials, prototypes, and scripts used to evaluate how UX dark patterns influence user behavior and perceived trust.
+\nIt contains the experimental materials, prototypes, and scripts used to evaluate how UX dark patterns influence user behavior and perceived trust.
 
 ---
 
