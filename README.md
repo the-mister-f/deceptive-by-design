@@ -4,7 +4,7 @@ This repository accompanies the bachelor thesis:
 **"Deceptive by Design: Assessing the Impact of UX Dark Patterns on Engagement and Trust in Digital Products"**  
 by **Firas Najar** (submitted April 11, 2025). It contains the experimental materials, prototypes, and scripts used to evaluate how UX dark patterns influence user behavior and perceived trust.
 
-
+<br>
 ## 📘 Overview
 
 In today’s world of digital product design, data plays a critical role in shaping how user interfaces are developed. Instead of focusing on usability and creating userfriendly interfaces, companies are shifting towards manipulative designs that influence user behavior in ways that benefit the business. This often leads to users spending more money, sharing more personal data, or making unintended decisions. These tactics, known as dark patterns, take advantage of cognitive biases in an attempt to boost short-term engagement at the expense of the user’s autonomy. This thesis conducts an extensive literature review to trace the origins of dark patterns, their taxonomies, and their effects on engagement and trust.
@@ -20,7 +20,7 @@ Key findings include:
 - **Trust decreased**, especially in emotionally and transactionally sensitive areas
 - **Digitally literate users were more resistant** to manipulation
 
-
+<br>
 ## 🧪 Experimental Design
 
 The experiment was implemented using **Flask**, a lightweight Python web framework. It served as the backend for managing routing, rendering templates, logging user interactions, and storing data.
@@ -41,13 +41,13 @@ The experiment was implemented using **Flask**, a lightweight Python web framewo
 - Secure handling of participant IDs and anonymized data storag
 
 
-
+<br>
 ## 📄 Thesis Download
 
 📘 [Download the Full Thesis (PDF)](https://drive.google.com/uc?export=download&id=1JUnWZIoZGqYONHjEL_yZu_EZ7qdZIZ8f)
 
 
-
+<br>
 ## 🤝 Acknowledgments
 
 - Benjamin Gülker — First Supervisor
@@ -55,7 +55,7 @@ The experiment was implemented using **Flask**, a lightweight Python web framewo
 - Wael Amri — Backend development & technical support
 
 
-
+<br>
 ## 📬 Contact
 For any questions or collaborations, feel free to contact me:
 - 📧 hello@firas.me
