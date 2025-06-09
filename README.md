@@ -22,6 +22,15 @@ Key findings include:
 - **Digitally literate users were more resistant** to manipulation
 
 
+## 📄 Thesis Download
+📘 [Download the Full Thesis (PDF)](https://drive.google.com/uc?export=download&id=1JUnWZIoZGqYONHjEL_yZu_EZ7qdZIZ8f)
+
+
+## 🤝 Acknowledgments
+
+- Benjamin Gülker — First Supervisor
+- Prof. Dr. Christoph Dörrenbächer — Second Supervisor
+- Wael Amri — Backend development & technical support
 
 ## 🧪 Experimental Design
 
@@ -42,21 +51,6 @@ The experiment was implemented using **Flask**, a lightweight Python web framewo
 - Post-interaction survey on trust, engagement, and digital competence
 - Secure handling of participant IDs and anonymized data storag
 
-
-
-
-## 📄 Thesis Download
-
-📘 [Download the Full Thesis (PDF)](https://drive.google.com/uc?export=download&id=1JUnWZIoZGqYONHjEL_yZu_EZ7qdZIZ8f)
-
-
-
-
-## 🤝 Acknowledgments
-
-- Benjamin Gülker — First Supervisor
-- Prof. Dr. Christoph Dörrenbächer — Second Supervisor
-- Wael Amri — Backend development & technical support
 
 
 
