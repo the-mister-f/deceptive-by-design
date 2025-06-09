@@ -19,22 +19,22 @@ To investigate these effects further, **a controlled online experiment** was car
 Key findings include:
 - Dark patterns **significantly increased engagement** (e.g., more sign-ups and data sharing)
 - **Trust decreased**, especially in emotionally and transactionally sensitive areas
-- **Digitally literate users were more resistant** to manipulation
+- **Digitally literate users were more resistant** to manipulation<br><br>
 
 
 ## 📄 Thesis Download
-📘 [Download the Full Thesis (PDF)](https://drive.google.com/uc?export=download&id=1JUnWZIoZGqYONHjEL_yZu_EZ7qdZIZ8f)
+📘 [Download the Full Thesis (PDF)](https://drive.google.com/uc?export=download&id=1JUnWZIoZGqYONHjEL_yZu_EZ7qdZIZ8f)<br><br>
 
 
 ## 🤝 Acknowledgments
 
 - Benjamin Gülker — First Supervisor
 - Prof. Dr. Christoph Dörrenbächer — Second Supervisor
-- Wael Amri — Backend development & technical support
+- Wael Amri — Backend development & technical support<br><br>
 
 ## 🧪 Experimental Design
 
-The experiment was implemented using **Flask**, a lightweight Python web framework. It served as the backend for managing routing, rendering templates, logging user interactions, and storing data.
+The experiment was implemented using **Flask**, a lightweight Python web framework. It served as the backend for managing routing, rendering templates, logging user interactions, and storing data.<br><br>
 
 ### Structure:
 
